@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <script>
+        function validation(){
+            var name= document.forms["myForm"]["Fname"].value;
+            if (name==""){
+                alert("Name is mandatory to fill")
+                return false
+            }
+else{
+    document.write("Name has been submitted")
+}
+        }
+    </script>
+    <form name="myForm" onsubmit="validation()">
+        Name:<input type="text" name="Fname"> <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
